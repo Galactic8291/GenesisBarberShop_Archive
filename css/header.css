@@ -1,4 +1,32 @@
 /* Header Styling */
-@media only screen and (min-width: 768px) {}
-@media only screen and (min-width: 1170px) {}
+.top-bar {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media only screen and (min-width: 768px) {
+  .trigger {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .top-bar {
+    width: 70%;
+    height: 45px;
+    margin: 0 auto;
+  }
+
+  .logo {
+    width: 12%;
+    height: 45px;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Reckoner';
+    padding-top: 10px;
+    float: left;
+    color: #000000;
+  }
+}
 

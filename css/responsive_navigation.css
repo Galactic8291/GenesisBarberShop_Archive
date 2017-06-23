@@ -1,8 +1,56 @@
 /* Responsive Navgiation */
 @media only screen and (min-width: 768px) {
+  .navigation {
+    position: fixed;
+    float: left;
+    top: auto;
+    width: 135px;
+    padding-top: 55px;
+    left: 0;
+    overflow: visible;
+    max-height: none;
+  }
+
+  .navigation.nav-is-visible {
+    box-shadow: none;
+  }
+
+  .navigation > ul {
+    padding: 0;
+  }
+
+  .navigation > ul > li > a {
+    padding: 2em 15px 2.4em;
+  }
+
+  .navigation .navigation-label, .navigation .btn-label {
+    display: none;
+  }
+
+  .navigation ul a {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .navigation .action-btn a {
+    margin: 1em 10% 0;
+  }
 }
 
 @media only screen and (min-width: 1170px) {
+  .navigation {
+    position: relative;
+    width: auto;
+    background-color: #fff;
+    padding: 0;
+    top: 0;
+    left: 0;
+  }
+
+  .navigation > ul {
+    padding: 0;
+  }
+
   .navigation li {
     display: inline-block;
   }
@@ -15,6 +63,7 @@
     font-size: 2rem;
     padding: 12px 30px;
     color: #000000;
+    border: none;
   }
 
   .navigation ul li a:hover {

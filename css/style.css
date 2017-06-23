@@ -45,3 +45,20 @@ input[type="search"]::-webkit-search-results-decoration {
   display: none;
 }
 
+.main-content::before {
+  display: none;
+  content: 'mobile';
+}
+
+@media only screen and (min-width: 768px) {
+  .main-content::before {
+    content: 'tablet'
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .main-content::before {
+    content: 'desktop';
+  }
+}
+

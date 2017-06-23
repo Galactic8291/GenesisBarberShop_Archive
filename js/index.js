@@ -1,13 +1,13 @@
 (function($) {
   const htmlWindow = $(window),
-    mainContent = $('.main-content'),
-    menuButton = $('.menu-button'),
-    body = $('.body'),
     header = $('.top-bar'),
-    trigger = $('.trigger'),
+    body = $('.body'),
+    mainContent = $('.main-content'),
     navigation = $('.navigation'),
-    button = $('.button'),
-    navigationLabel = $('.navigation-label')
+    menuButton = $('.menu-button'),
+    trigger = $('.trigger'),
+    navigationLabel = $('.navigation-label'),
+    button = $('.button')
 
   const checkViewport = () => {
     return window.getComputedStyle(document.querySelector('.main-content'), '::before').getPropertyValue('content').replace(/'/g, "").replace(/"/g, "")
@@ -17,15 +17,13 @@
     const view = checkViewport()
 
     if (view === 'mobile' || view === 'tablet') {
-      navigation.detach()
-      mainContent.append(navigation)
-
-      button.detach().insertAfter(navigation.find('ul'))
+      navigation.detach().prependTo(mainContent)
       navigationLabel.detach().prependTo('.navigation ul:first-child')
+      button.detach().appendTo('.navigation')
     } else if(view === 'desktop') {
-      button.detach()
-      navigationLabel.detach()
       navigation.detach().insertAfter(header.find('.logo'))
+      navigationLabel.detach()
+      button.detach()
     }
   }
 

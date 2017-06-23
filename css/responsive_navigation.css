@@ -39,12 +39,12 @@
 
 @media only screen and (min-width: 1170px) {
   .navigation {
-    left: 0;
-    top: 0;
     position: relative;
-    padding: 0;
     width: auto;
-    background-color: #ffffff;
+    background-color: #fff;
+    padding: 0;
+    top: 0;
+    left: 0;
   }
 
   .navigation > ul {
@@ -55,21 +55,20 @@
     display: inline-block;
   }
 
-  .navigation > ul > li > a {
-    padding: 10px 50px;
-    border: none;
-    color: #000000;
+  .navigation ul li a {
+    width: 100%;
+    height: 45px;
+    display: block;
     font-family: 'Reckoner';
-    font-size: 2.5rem;
+    font-size: 2rem;
+    padding: 12px 30px;
+    color: #000000;
+    border: none;
   }
 
-  .navigation li:first-child {
-    border-left: 1px solid;
-  }
-
-  .navigation ul a:hover {
-    color: #c0392b;
+  .navigation ul li a:hover {
     background-color: #1f1f21;
+    color: #c0392b;
   }
 }
 

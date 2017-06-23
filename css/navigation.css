@@ -59,10 +59,6 @@
   letter-spacing: .1em;
 }
 
-.navigation .action-btn a::before {
-  display: none;
-}
-
 .navigation .action-btn a {
   display: block;
   margin: 0 5%;

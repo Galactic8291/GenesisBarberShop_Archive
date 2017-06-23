@@ -16,7 +16,7 @@
   const moveItems = () => {
     const view = checkViewport()
 
-    if (view === 'mobile') {
+    if (view === 'mobile' || view === 'tablet') {
       navigation.detach()
       mainContent.append(navigation)
 
@@ -25,7 +25,6 @@
     } else if(view === 'desktop') {
       button.detach()
       navigationLabel.detach()
-
       navigation.detach().insertAfter(header.find('.logo'))
     }
   }

@@ -93,15 +93,15 @@ input[type="search"]::-webkit-search-results-decoration {
 
   .cuts {
     float: left;
-    width: 50%;
+    width: 30%;
     display: inline-block;
   }
 
   .locations {
     width: 25%;
     position: relative;
-    display: inline-block;
     margin-left: 20px;
+    float: left;
   }
 }
 

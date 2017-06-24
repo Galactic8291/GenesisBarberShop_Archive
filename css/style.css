@@ -93,12 +93,12 @@ input[type="search"]::-webkit-search-results-decoration {
 
   .cuts {
     float: left;
-    width: 30%;
+    width: 35%;
     display: inline-block;
   }
 
   .locations {
-    width: 25%;
+    width: 35%;
     position: relative;
     margin-left: 20px;
     float: left;

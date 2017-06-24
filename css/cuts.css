@@ -1,0 +1,18 @@
+/* Pictures */
+.cut {
+  height: 400px;
+  width: 400px;
+  position: relative;
+  margin: 10px auto;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.cut img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+}
+

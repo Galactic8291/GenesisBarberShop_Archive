@@ -1,12 +1,23 @@
 /* Location cards */
 .location {
-  height: 200px;
-  width: 300px;
+  height: 300px;
+  width: 400px;
   margin: 5px auto;
   display: block;
   background-color: red;
   position: relative;
   font-family: 'Varela Round';
+}
+
+.location hr {
+  width: 30%;
+  height: 5px;
+  position: absolute;
+  z-index: 2;
+  background-color: #c0392b;
+  border: none;
+  left: 35%;
+  top: 36%;
 }
 
 .location img {
@@ -32,7 +43,7 @@
   position: absolute;
   z-index: 2;
   color: #ffffff;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 700;
   text-align: center;
   margin-top: 20%;
@@ -43,7 +54,7 @@
   position: absolute;
   z-index: 2;
   color: #ffffff;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   width: 65%;
   text-align: center;
   font-weight: 600;

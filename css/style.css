@@ -103,5 +103,12 @@ input[type="search"]::-webkit-search-results-decoration {
     margin-left: 20px;
     float: left;
   }
+
+  .hours {
+    width: 26%;
+    position: relative;
+    float: left;
+    margin-left: 10px;
+  }
 }
 

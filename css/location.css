@@ -1,6 +1,6 @@
 /* Location cards */
 .locations {
-  width: 48%;
+  width: 98%;
   float: left;
 }
 
@@ -63,5 +63,17 @@
   font-weight: 600;
   top: 44%;
   left: 18%;
+}
+
+@media only screen and (min-width: 768px) {
+  .locations {
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .locations {
+    width: 48%;
+  }
 }
 

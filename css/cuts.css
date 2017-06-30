@@ -1,21 +1,53 @@
 /* Pictures */
-.cuts {
-  width: 47%;
-  margin: 0 8px;
+@media only screen and (min-width: 768px) {
+  .cuts {
+    width: 100%;
+  }
+
+  .cut {
+    width: 275px;
+    height: 275px;
+    position: relative;
+    display: inline-block;
+    float: left;
+    margin: 5px;
+  }
+
+  .cut img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
 }
 
-.cut {
-  width: 300px;
-  height: 300px;
-  position: relative;
-  display: inline-block;
-  float: left;
-  margin: 5px;
+@media only screen and (min-width: 1024px) {
+  .cut {
+    width: 250px;
+    height: 250px;
+  }
 }
 
-.cut img {
-  width: 100%;
-  height: 100%;
-  position: relative;
+@media only screen and (min-width: 1170px) {
+  .cuts {
+    width: 47%;
+    height: 105vh;
+    margin: 0 8px;
+    margin-bottom: 10px;
+  }
+
+  .cut {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    display: inline-block;
+    float: left;
+    margin: 5px;
+  }
+
+  .cut img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
 }
 

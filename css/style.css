@@ -50,15 +50,65 @@ input[type="search"]::-webkit-search-results-decoration {
   content: 'mobile';
 }
 
+.main-content .content-wrapper {
+  padding: 50px 3% 3em;
+}
+
+.title-card {
+  line-height: 2.1;
+  border-bottom: 1px solid #ecf0f1;
+  font-family: 'Varela Round';
+  margin-bottom: 12px;
+}
+
+.title-card .title {
+  border-bottom: 1px solid black;
+  padding-bottom: 8px;
+  font-weight: 600;
+  padding-right: 50px;
+  font-size: 1.8rem;
+}
+
 @media only screen and (min-width: 768px) {
   .main-content::before {
     content: 'tablet'
+  }
+
+  .main-content .content-wrapper {
+    margin-left: 115px;
+    padding: 55px 5% 3em;
   }
 }
 
 @media only screen and (min-width: 1170px) {
   .main-content::before {
     content: 'desktop';
+  }
+
+  .main-content .content-wrapper {
+    width: 70%;
+    margin: 0 auto;
+    padding: 4px 2% 3em;
+  }
+
+  .cuts {
+    float: left;
+    width: 35%;
+    display: inline-block;
+  }
+
+  .locations {
+    width: 35%;
+    position: relative;
+    margin-left: 20px;
+    float: left;
+  }
+
+  .hours {
+    width: 26%;
+    position: relative;
+    float: left;
+    margin-left: 10px;
   }
 }
 

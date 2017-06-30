@@ -94,5 +94,15 @@ input[type="search"]::-webkit-search-results-decoration {
     padding: 0;
     margin: 0;
   }
+
+  .wrapper-left {
+    width: 49%;
+    float: left;
+  }
+
+  .wrapper-right {
+    width: 50%;
+    float: right;
+  }
 }
 

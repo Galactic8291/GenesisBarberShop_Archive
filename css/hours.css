@@ -1,7 +1,13 @@
 /* Hours Styling */
+.hours {
+  width: 48%;
+  float: right;
+  margin-right: 5px;
+}
+
 .operation {
   width: 95%;
-  margin: 8px auto;
+  margin: 25px auto;
   font-family: 'Varela Round';
 }
 

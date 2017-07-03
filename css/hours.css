@@ -1,13 +1,11 @@
 /* Hours Styling */
 .hours {
-  width: 48%;
-  float: right;
-  margin-right: 5px;
+  width: 98%;
 }
 
 .operation {
   width: 95%;
-  margin: 25px auto;
+  margin: 10px auto;
   font-family: 'Varela Round';
 }
 
@@ -30,5 +28,40 @@
 
 .operation .times .time {
   float: right;
+}
+
+@media only screen and (min-width: 1170px) {
+  .hours {
+    width: 48%;
+    float: right;
+    margin-right: 5px;
+  }
+
+  .operation {
+    width: 95%;
+    margin: 25px auto;
+    font-family: 'Varela Round';
+  }
+
+  .operation .title {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #ecf0f1;
+  }
+
+  .operation .times {
+    font-size: 1.6rem;
+    height: 20px;
+  }
+
+  .operation .times .day {
+    float: left;
+  }
+
+  .operation .times .time {
+    float: right;
+  }
 }
 

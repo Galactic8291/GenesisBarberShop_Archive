@@ -6,7 +6,7 @@
 
 .location {
   height: 200px;
-  width: 300px;
+  width: 95%;
   margin: 5px auto;
   display: block;
   position: relative;
@@ -47,7 +47,7 @@
   position: absolute;
   z-index: 2;
   color: #ffffff;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 700;
   text-align: center;
   margin-top: 15%;
@@ -58,7 +58,7 @@
   position: absolute;
   z-index: 2;
   color: #ffffff;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   text-align: center;
   font-weight: 600;
   top: 44%;
@@ -67,7 +67,13 @@
 
 @media only screen and (min-width: 768px) {
   .locations {
-    width: 60%;
+    width: 55%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+  .locations {
+    width: 45%;
   }
 }
 

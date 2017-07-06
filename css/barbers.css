@@ -1,2 +1,61 @@
 /* Barber Styling */
+.academy {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.calendar {
+  width: 98%;
+  margin: 2px auto;
+  font-family: 'Varela Round';
+  box-shadow: 0 3px 3px rgba(0,0,0,0.15);
+  float: left;
+}
+
+.description {
+  width: 98%;
+  margin: 2px auto;
+}
+
+.appointments {
+  width: 85%;
+  margin: 2px;
+}
+
+.calendar .month {
+  width: 100%;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 8px 0 8px 0;
+}
+
+.calendar .week {
+  width: 100%;
+}
+
+.calendar .week .weekday, .calendar .days .day {
+  float: left;
+  width: 14.28%;
+  line-height: 1.5;
+  display: inline-block;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.calendar .days .day {
+  padding: 10px;
+}
+
+.calendar .mute {
+  color: #e0e0e0;
+}
+
+.calendar .today {
+  width: 27px;
+  height: 27px;
+  color: #c0392b;
+  background-color: rgba(31, 31, 33, .9);
+  margin: 0 auto;
+}
 

@@ -15,6 +15,7 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'>
 
     <!-- Font Awesome -->
     <link rel='stylesheet' href='../css/font-awesome/css/font-awesome.min.css'>
@@ -55,11 +56,50 @@
             </div>
 
             <div class='description'>
+              <div class='title-card'>
+                <span class='title'>The Academy</span>
+              </div>
             </div>
           </div>
 
           <div class='wrapper-right'>
-            <div class='appointments'>
+            <div class='form-container'>
+              <h1>&bull; Book Appointment &bull;</h1>
+              <div class='underline'></div>
+              <div class='img-container'>
+                <img src='../img/scissors.png'>
+              </div>
+
+              <form action='#' method='' class='booking_form'>
+                <div class='name'>
+                  <label for='name'></label>
+                  <input type='text' placeholder='My name is...' name='name' class='name-input' required>
+                </div>
+                <div class='email'>
+                  <label for='email'></label>
+                  <input type='text' placeholder='My e-mail is...' name='email' class='email-input' required>
+                </div>
+                <div class='telephone'>
+                  <label for='name'></label>
+                  <input type='text' placeholder='My number is...' name='telephone' class='telephone-input' required>
+                </div>
+                <div class='cut-type'>
+                  <label for='subject'></label>
+                  <select placeholder='Cut type..' class='subject-input' name='cut-type' required>
+                    <option disabled hidden selected>Cut Type</option>
+                    <option>Fade</option>
+                    <option>All Even</option>
+                    <option>Fade w/ Trim</option>
+                  </select>
+                </div>
+                <div class='message'>
+                  <label for='message'></label>
+                  <textarea placeholder='Anything specific you would like' class='message-input' name='message' cols='30' rows='5' required></textarea>
+                </div>
+                <div class='submit'>
+                  <input type='submit' value='Book Appointment' class='form-btn'>
+                </div>
+              </form>
             </div>
           </div>
 

@@ -5,7 +5,7 @@
 }
 
 .calendar {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
   font-family: 'Varela Round';
@@ -38,5 +38,11 @@
   background-color: rgba(0,0,0,0.8);
   color: #ffffff;
   font-weight: 700;
+}
+
+@media only screen and (min-width: 768px) {
+  .calendar {
+    width: 80%;
+  }
 }
 

@@ -46,20 +46,20 @@
 
 @media only screen and (min-width: 1170px) {
   .cuts {
-    width: 98%;
-    height: 105vh;
+    width: 100%;
     margin: 0 8px;
     margin-left: 10px;
+    margin-bottom: 10px;
     display: inline-block;
   }
 
   .cut {
-    width: 46%;
+    width: 30%;
     height: 28%;
     position: relative;
     display: inline-block;
     float: left;
-    margin: 5px;
+    margin: 2px;
   }
 
   .cut img {

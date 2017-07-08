@@ -88,7 +88,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 @media only screen and (min-width: 1170px) {
   .main-content {
-    width: 80%;
+    width: 75%;
     margin: 8px auto;
   }
 

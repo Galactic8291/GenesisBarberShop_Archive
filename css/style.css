@@ -78,37 +78,37 @@ input[type="search"]::-webkit-search-results-decoration {
     margin-left: 115px;
     padding: 55px 5% 3em;
   }
+
+  .wrapper-right {
+    width: 98%;
+    float: left;
+    margin-bottom: 10px;
+  }
 }
 
 @media only screen and (min-width: 1170px) {
+  .main-content {
+    width: 75%;
+    margin: 8px auto;
+  }
+
   .main-content::before {
     content: 'desktop';
   }
 
   .main-content .content-wrapper {
-    width: 70%;
-    margin: 0 auto;
-    padding: 4px 2% 3em;
+    padding: 0;
+    margin: 0;
   }
 
-  .cuts {
-    float: left;
-    width: 35%;
-    display: inline-block;
-  }
-
-  .locations {
-    width: 35%;
-    position: relative;
-    margin-left: 20px;
+  .wrapper-left {
+    width: 49%;
     float: left;
   }
 
-  .hours {
-    width: 26%;
-    position: relative;
-    float: left;
-    margin-left: 10px;
+  .wrapper-right {
+    width: 50%;
+    float: right;
   }
 }
 

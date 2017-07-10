@@ -7,7 +7,8 @@
     menuButton = $('.menu-button'),
     trigger = $('.trigger'),
     navigationLabel = $('.navigation-label'),
-    button = $('.button')
+    button = $('.button'),
+    space = $('.space')
 
   const checkViewport = () => {
     return window.getComputedStyle(document.querySelector('.main-content'), '::before').getPropertyValue('content').replace(/'/g, "").replace(/"/g, "")
@@ -20,8 +21,10 @@
       navigation.detach().prependTo(mainContent)
       navigationLabel.detach().prependTo('.navigation ul:first-child')
       button.detach().appendTo('.navigation')
+      space.detach()
     } else if(view === 'desktop') {
       navigation.detach().insertAfter(header.find('.logo'))
+      space.detach().appendTo('.cuts')
       navigationLabel.detach()
       button.detach()
     }

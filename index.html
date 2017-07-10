@@ -13,6 +13,7 @@
     <link rel='stylesheet' href='css/cuts.css'>
     <link rel='stylesheet' href='css/location.css'>
     <link rel='stylesheet' href='css/hours.css'>
+    <link rel='stylesheet' href='css/genesis.css'>
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
@@ -32,10 +33,9 @@
       <nav class='navigation'>
         <ul>
           <li class='navigation-label'>Menu</li>
-          <li><a href='#'>Home</a></li>
-          <li><a href='#'>Appointments</a></li>
-          <li><a href='#'>The Genesis</a></li>
-          <li><a href='#'>The Academy</a></li>
+          <li><a href='index.html'>Home</a></li>
+          <li><a href='pages/appointments.html'>Appointments</a></li>
+          <li><a href='pages/academy.html'>The Academy</a></li>
           <li><a href='#'>Contact & Location</a></li>
           <li><a href='#'>Careers</a></li>
         </ul>
@@ -48,60 +48,77 @@
 
     <main class='main-content'>
       <section class='content-wrapper'>
-        <article class='cuts'>
-          <div class='title-card'>
-            <span class='title'>Latest Cuts</span>
-          </div>
+        <div class='wrapper-left'>
+          <article class='cuts'>
+            <div class='title-card'>
+              <span class='title'>Latest Cuts</span>
+            </div>
 
-          <div class='cut'><img src='img/cut_one.png'></div>
-          <div class='cut'><img src='img/cut_two.png'></div>
-          <div class='cut'><img src='img/cut_three.png'></div>
-        </article>
+            <div id='instafeed'></div>
+          </article>
+        </div>
 
-        <article class='locations'>
-          <div class='title-card'>
-            <span class='title'>Locations</span>
-          </div>
+        <div class='wrapper-right'>
+          <article class='genesis'>
+            <div class='title-card'>
+              <span class='title'>The Genesis</span>
+            </div>
 
-          <section class='location'>
-            <div class='title'>Genesis Barbers & Academy</div>
-            <hr>
-            <div class='address'>2890 Garber Way, Woodbridge VA 22192</div>
-            <img src='img/shop.png'>
-            <div class='gradient-overlay'></div>
-          </section>
-          <section class='location'>
-            <div class='title'>Genesis ll</div>
-            <hr>
-            <div class='address'>1411 Old Bridge Rd Woodbridge 22192</div>
-            <img src='img/barbershop.png'>
-            <div class='gradient-overlay'></div>
-          </section>
-        </article>
+            <div class='letter'>
+              <p class='description'>Genesis is a place where you can get groomed in a relaxing environment, it's a place where you can be you and socialize with people of great character.
+                When you set foot inside of our barber shop there's a sense of positivity in the air, the bright lights shining from the top of the barbers stations, 
+                the cultural style that you see all around you represents who we are and what we are about.</p>
+            </div>
+            <div class='signature'>- Genesis Barbers</div>
+          </article>
 
-        <article class='hours'>
-          <div class='title-card'>
-            <span class='title'>Hours Of Operation</span>
-          </div>
-          <div class='operation'>
-            <span class='title'>Genesis Barber Shop & Academy</span>
-            <div class='times'><span class='day'>Mon - Fri</span> <span class='time'>10am - 8pm</span></div>
-            <div class='times'><span class='day'>Saturday</span> <span class='time'>8am - 6pm</span></div>
-            <div class='times'><span class='day'>Sunday</span> <span class='time'>10am - 3pm</span></div>
-          </div>
-          <div class='operation'>
-            <span class='title'>Genesis ll</span>
-            <div class='times'><span class='day'>Mon - Fri</span> <span class='time'>10am - 8pm</span></div>
-            <div class='times'><span class='day'>Saturday</span> <span class='time'>8am - 6pm</span></div>
-            <div class='times'><span class='day'>Sunday</span> <span class='time'>10am - 3pm</span></div>
-          </div>
-        </article>
+          <article class='locations'>
+            <div class='title-card'>
+              <span class='title'>Locations</span>
+            </div>
+
+            <section class='location'>
+              <div class='title'>Genesis Barbers & Academy</div>
+              <hr>
+              <div class='address'>2890 Garber Way, Woodbridge VA 22192</div>
+              <img src='img/shop.png'>
+              <div class='gradient-overlay'></div>
+            </section>
+            <section class='location'>
+              <div class='title'>Genesis ll</div>
+              <hr>
+              <div class='address'>1411 Old Bridge Rd Woodbridge 22192</div>
+              <img src='img/barbershop.png'>
+              <div class='gradient-overlay'></div>
+            </section>
+          </article>
+
+          <article class='hours'>
+            <div class='title-card'>
+              <span class='title'>Hours Of Operation</span>
+            </div>
+            <div class='operation'>
+              <span class='title'>Genesis Barber Shop & Academy</span>
+              <div class='times'><span class='day'>Mon - Fri</span> <span class='time'>9am - 7pm</span></div>
+              <div class='times'><span class='day'>Saturday</span> <span class='time'>8am - 6pm</span></div>
+              <div class='times'><span class='day'>Sunday</span> <span class='time'>10am - 3pm</span></div>
+            </div>
+            <div class='operation'>
+              <span class='title'>Genesis ll</span>
+              <div class='times'><span class='day'>Mon - Fri</span> <span class='time'>10am - 8pm</span></div>
+              <div class='times'><span class='day'>Saturday</span> <span class='time'>8am - 6pm</span></div>
+              <div class='times'><span class='day'>Sunday</span> <span class='time'>10am - 3pm</span></div>
+            </div>
+          </article>
+        </div>
       </section>
     </main>
   </body>
 
   <footer>
     <script src='js/jquery-3.2.1.min.js'></script>
+    <script src='js/instafeed.min.js'></script>
     <script src='js/index.js'></script>
+    <script src='js/instagram.js'></script>
   </footer>
 </html>

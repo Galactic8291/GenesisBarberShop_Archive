@@ -1,10 +1,14 @@
 /* Location cards */
+.locations {
+  width: 98%;
+  float: left;
+}
+
 .location {
-  height: 300px;
-  width: 400px;
+  height: 200px;
+  width: 95%;
   margin: 5px auto;
   display: block;
-  background-color: red;
   position: relative;
   font-family: 'Varela Round';
 }
@@ -17,7 +21,7 @@
   background-color: #c0392b;
   border: none;
   left: 35%;
-  top: 36%;
+  top: 35%;
 }
 
 .location img {
@@ -43,22 +47,39 @@
   position: absolute;
   z-index: 2;
   color: #ffffff;
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   font-weight: 700;
   text-align: center;
-  margin-top: 20%;
+  margin-top: 15%;
 }
 
 .location .address {
-  width: 65%;
+  width: 66%;
   position: absolute;
   z-index: 2;
   color: #ffffff;
-  font-size: 2.2rem;
-  width: 65%;
+  font-size: 1.5rem;
   text-align: center;
   font-weight: 600;
-  top: 42%;
+  top: 44%;
   left: 18%;
+}
+
+@media only screen and (min-width: 768px) {
+  .locations {
+    width: 55%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+  .locations {
+    width: 45%;
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .locations {
+    width: 48%;
+  }
 }
 
